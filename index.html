@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — Кинопортал</title>
+    <link rel="stylesheet" href="css/style.css" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты — Кинопортал</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- Навигационная панель -->
     <nav class="navbar">
         <ul class="nav-list">
+
+            <li><a href="file:///D:/myhtml/index.html">Главная</a></li>
+            <li><a href="file:///D:/myhtml/new.html">Новости</a></li>
+            <li><a href="file:///D:/myhtml/contact.html">Контакты</a></li>
              <li><a href="file:///F:/myhtml/index.html">Главная</a></li>
             <li><a href="file:///F:/myhtml/nev.html#news">Новости</a></li>
             <li><a href="file:///F:/myhtml/cohtact.html">Контакты</a></li>
@@ -24,9 +35,61 @@
         <!-- Поисковая строка (как на других страницах) -->
         <div class="search-container">
             <span class="search-icon"><i class="fas fa-search"></i></span>
+            <input type="search" id="search" placeholder="Поиск информации..." />
+        </div>
+        <div class="block">
+            <div class="afiha">Афиша</div>
+        </div>
+        <div class="kino-container" style="display:flex; gap:20px; flex-wrap:wrap;">
+            <!-- Первый блок -->
+            <div class="kino">
+                <img src="https://static.okko.tv/images/v4/0bdcf83e-376b-43ca-a262-bb190b16aa91?presetId=4000&amp;width=1200&amp;height=630&amp;scale=1&amp;quality=80" alt="" />
+                <p>Крушение</p>
+                <p>Жанр: боевик и триллер</p>
+                <p>Сюжет: пилот Броуди Торранс совершает аварийную посадку на филиппинском острове Холо, который контролируют повстанцы. Преступники берут в заложники пассажиров и требуют выкуп. Броуди объединяется с бывшим легионером Луи, обвинённым в убийстве, который тоже летел этим рейсом. Герои встают на защиту пассажиров и вступают в неравный бой с повстанцами.</p>
+                <div class="btn">Купить билет</div>
+            </div>
+            <!-- Второй блок -->
+            <div class="kino">
+                <img src="https://avatars.mds.yandex.net/get-ott/1531675/2a00000177df33877195c109984a6ec32396/2016x1134" alt="" />
+                <p>Вертикальный придел</p>
+                <p>Жанр: приключения, боевик, драма</p>
+                <p>Сюжет:Фильм рассказывает о группе альпинистов, 
+                    которые отправляются в опасное восхождение на вершину К2 — вторую по высоте
+                     гору в мире. Главный герой — бывший альпинист и профессиональный спасатель
+                      Райан Эшли (сыграл Кевин Майкл Ричардсон). Его сестра, Энни (Мишель Йео),
+                       вместе с командой сталкивается с угрозой из-за снежной бури,
+                        обвальной лавины и других опасностей на горе.</p>
+                <div class="btn">Купить билет</div>
+            </div>
+            <!-- Третий блок -->
+            <div class="kino">
+                <img src="https://i.ytimg.com/vi/_uHWt7dRTSQ/maxresdefault.jpg" alt="" />
+                <p>Август</p>
+                <p>Жанр:  военный, триллер, боевик, детектив, драма</p>
+                <p>Сюжет: Действие происходит в августе 1944 года на территории
+                     освобождённой Беларуси в районе города Лида. 
+                     В тылу советских войск действуют вражеские агенты. 
+                     В эфир регулярно выходит радиостанция с позывными «КАО»,
+                      передающая шифрованные радиограммы. 
+                      Трём контрразведчикам из Смерша во главе с капитаном 
+                      Алёхиным поручено в кратчайшие сроки разыскать разведгруппу противника..</p>
+                <div class="btn">Купить билет</div>
+            </div>
+            <!-- Четвертый блок -->
+            <div class="kino">
+                <img src="https://avatars.mds.yandex.net/i?id=53b3e6731b747ebafd2a9ffc05a0710c_l-5423330-images-thumbs&n=13" alt="" />
+                <p>Селфи</p>
+                <p>Жанр: триллер и драма. </p>
+                <p>Сюжет: у известного писателя Владимира Богданова обнаруживается двойник. 
+                    В считанные дни «копия» отнимает у Владимира всё: семью, любовницу, 
+                    работу, славу. Постепенно двойник полностью перенимает чужую жизнь,
+                     и теперь его собственное существование под большим вопросом. </p>
+                <div class="btn">Купить билет</div>
+            </div>
+    </main>
             <input type="search" id="search" placeholder="Поиск информации...">
         </div>
-
     <!-- Подвал -->
     <footer class="footer">
         <p>2026 Кинопортал. Все права защищены.</p>
@@ -35,3 +98,6 @@
     <script type="module" src="js/contacts.js"></script>
 </body>
 </html>
+</html>
+
+
