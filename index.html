@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинотеатр - Управление</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Шапка -->
+    <div class="header">
+        <div class="logo">КиноПлюс</div>
+        <div class="menu">
+            <a href="file:///F:/g/index.html#" class="active">Главная</a>
+            <a href="file:///F:/g/film.html">Фильмы</a>
+            <a href="#">Сеансы</a>
+            <a href="#">Залы</a>
+            <a href="#">Отчёты</a>
+        </div>
+    </div>
+
+    <!-- Контент -->
+    <div class="container">
+        <h1>Статистика дня</h1>
+
+        <!-- Карточки -->
+        <div class="stats">
+            <div class="card">
+                <h2>1,234</h2>
+                <p>Продано билетов</p>
+            </div>
+            <div class="card">
+                <h2>456,780 ₽</h2>
+                <p>Выручка</p>
+            </div>
+            <div class="card">
+                <h2>89%</h2>
+                <p>Загрузка залов</p>
+            </div>
+            <div class="card">
+                <h2>12</h2>
+                <p>Сеансов сегодня</p>
+            </div>
+        </div>
+
+        <!-- Расписание -->
+        <h1>Сеансы сегодня</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Время</th>
+                    <th>Фильм</th>
+                    <th>Зал</th>
+                    <th>Продано</th>
+                    <th>Статус</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10:00</td>
+                    <td>Барби</td>
+                    <td>Зал 1</td>
+                    <td>45/85</td>
+                    <td><span class="status green">Идёт</span></td>
+                    <td>
+                        <button class="btn btn-primary">Изм.</button>
+                        <button class="btn btn-danger">Отмена</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13:30</td>
+                    <td>Оппенгеймер</td>
+                    <td>Зал 2</td>
+                    <td>100/100</td>
+                    <td><span class="status green">Полный</span></td>
+                    <td>
+                        <button class="btn btn-primary">Изм.</button>
+                        <button class="btn btn-danger">Отмена</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td>Дэдпул 3</td>
+                    <td>Зал 1</td>
+                    <td>30/85</td>
+                    <td><span class="status yellow">Скоро</span></td>
+                    <td>
+                        <button class="btn btn-primary">Изм.</button>
+                        <button class="btn btn-danger">Отмена</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>19:30</td>
+                    <td>Аватар</td>
+                    <td>Зал 3</td>
+                    <td>0/150</td>
+                    <td><span class="status red">Отменён</span></td>
+                    <td>
+                        <button class="btn btn-primary">Изм.</button>
+                        <button class="btn btn-success">Открыть</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Фильмы -->
+        <h1 style="margin-top: 40px;"> Фильмы в прокате</h1>
+        <div class="movies">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://avatars.mds.yandex.net/i?id=f042531033f6218524d27b450520b4004b7c68d1-10877207-images-thumbs&n=13" alt=""></div>
+                <div class="movie-info">
+                    <h3>Дэдпул 3</h3>
+                    <p>Боевик, Комедия | 128 мин</p>
+                    <span>3D</span>
+                    <span>В прокате</span>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster"><img src="https://avatars.mds.yandex.net/i?id=c9e8c8e4519ed2e09614a73e6cc3bcbade5b972d-7047516-images-thumbs&n=13" alt=""></div>
+                
+                <div class="movie-info">
+                    <h3>Барби</h3>
+                    <p>Комедия, Фэнтези | 114 мин</p>
+                    <span>2D</span>
+                    <span>В прокате</span>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster"><img src="https://avatars.mds.yandex.net/i?id=1dc4415b16d2cbdf11654fea003a191748208535-4410363-images-thumbs&n=13" alt=""></div>
+                
+                <div class="movie-info">
+                    <h3>Оппенгеймер</h3>
+                    <p>Драма, История | 180 мин</p>
+                    <span>Скоро</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопки управления -->
+        <div style="margin-top: 40px; text-align: center;">
+            <button class="btn btn-primary">
+                + Добавить фильм
+            </button>
+            <button class="btn btn-success">
+                + Добавить сеанс
+            </button>
+        </div>
+
+    </div>
+   <script type="module" src="js/contacts.js"></script>
+
+</body>
+</html>

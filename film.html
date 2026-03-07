@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинотеатр - Фильмы</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Шапка -->
+    <div class="header">
+        <div class="logo">КиноПлюс</div>
+        <div class="menu">
+            <a href="index.html">Главная</a>
+            <a href="film.html" class="active">Фильмы</a>
+            <a href="#">Сеансы</a>
+            <a href="#">Залы</a>
+            <a href="#">Отчёты</a>
+        </div>
+    </div>
+
+    <!-- Контент -->
+    <div class="films-container">
+        
+        <!-- Заголовок -->
+        <div class="page-header">
+            <h1 class="page-title">Управление <span>фильмами</span></h1>
+            <button class="btn-add">
+                <span>+</span> Добавить фильм
+            </button>
+        </div>
+
+        <!-- Поиск -->
+        <input type="text" class="search-box" placeholder=" Поиск по названию...">
+
+        <!-- Фильтры -->
+        <div class="filters">
+            <button class="filter-btn active">Все</button>
+            <button class="filter-btn">В прокате</button>
+            <button class="filter-btn">Скоро</button>
+            <button class="filter-btn">Завершено</button>
+            <button class="filter-btn">2D</button>
+            <button class="filter-btn">3D</button>
+        </div>
+
+        <!-- Количество -->
+        <p class="films-count">Найдено: 12 фильмов</p>
+
+        <!-- Сетка фильмов -->
+        <div class="films-grid">
+            
+            <!-- Фильм 1 -->
+            <div class="film-card">
+                <div class="film-poster">
+                    <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10809116/d0ae51bc-61f6-46ad-8564-7ec4233e33f7/1920x" alt="">
+                    <span class="film-rating">8.5</span>
+                    <span class="film-format">3D</span>
+                </div>
+                <div class="film-info">
+                    <span class="status-badge status-active">В прокате</span>
+                    <h3 class="film-title">Дэдпул и Росомаха</h3>
+                    <p class="film-genre">Боевик, Комедия</p>
+                    <div class="film-meta">
+                        <span>128 мин</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="film-actions">
+                        <button class="btn btn-primary">Изменить</button>
+                        <button class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильм 2 -->
+            <div class="film-card">
+                <div class="film-poster">
+                    <img src="https://avatars.mds.yandex.net/i?id=0d081b94648ce72951c33e409fdb388902890c60-3573407-images-thumbs&n=13" alt="">
+                    <span class="film-rating">7.8</span>
+                    <span class="film-format">2D</span>
+                </div>
+                <div class="film-info">
+                    <span class="status-badge status-active">В прокате</span>
+                    <h3 class="film-title">Барби</h3>
+                    <p class="film-genre">Комедия, Фэнтези</p>
+                    <div class="film-meta">
+                        <span>114 мин</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="film-actions">
+                        <button class="btn btn-primary">Изменить</button>
+                        <button class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильм 3 -->
+            <div class="film-card">
+                <div class="film-poster">
+                    <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/879158/afa1e702bc8fd40d9f1369cb9066b3ec/960x540" alt="">
+                    <span class="film-rating">8.9</span>
+                    <span class="film-format">IMAX</span>
+                </div>
+                <div class="film-info">
+                    <span class="status-badge status-active">В прокате</span>
+                    <h3 class="film-title">Оппенгеймер</h3>
+                    <p class="film-genre">Драма, История</p>
+                    <div class="film-meta">
+                        <span>180 мин</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="film-actions">
+                        <button class="btn btn-primary">Изменить</button>
+                        <button class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильм 4 -->
+            <div class="film-card">
+                <div class="film-poster">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/15389086/2a0000019719ea83b3b97cc7e27e195b2f66/orig" alt="">
+                    <span class="film-rating">8.2</span>
+                    <span class="film-format">3D IMAX</span>
+                </div>
+                <div class="film-info">
+                    <span class="status-badge status-soon">Скоро</span>
+                    <h3 class="film-title">Аватар: Путь воды</h3>
+                    <p class="film-genre">Фантастика, Приключения</p>
+                    <div class="film-meta">
+                        <span>192 мин</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="film-actions">
+                        <button class="btn btn-primary">Изменить</button>
+                        <button class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильм 5 -->
+            <div class="film-card">
+                <div class="film-poster">
+                    <img src="https://img.championat.com/s/1200x630/news/big/n/x/matrica-voskreshenie-poluchit-platnye-nft-avatary_1635867376153219646.jpg" alt="">
+                    <span class="film-rating">7.5</span>
+                    <span class="film-format">2D</span>
+                </div>
+                <div class="film-info">
+                    <span class="status-badge status-ended">Завершено</span>
+                    <h3 class="film-title">Матрица: Воскрешение</h3>
+                    <p class="film-genre">Фантастика, Боевик</p>
+                    <div class="film-meta">
+                        <span>148 мин</span>
+                        <span>2021</span>
+                    </div>
+                    <div class="film-actions">
+                        <button class="btn btn-primary">Изменить</button>
+                        <button class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильм 6 -->
+            <div class="film-card">
+                <div class="film-poster">
+                    <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/d37603df-0064-4cff-9664-7faacbec7c77/1920x" alt="">
+                    <span class="film-rating">8.0</span>
+                    <span class="film-format">3D</span>
+                </div>
+                <div class="film-info">
+                    <span class="status-badge status-active">В прокате</span>
+                    <h3 class="film-title">Страж Galaxies</h3>
+                    <p class="film-genre">Фантастика, Комедия</p>
+                    <div class="film-meta">
+                        <span>135 мин</span>
+                        <span>2024</span>
+                    </div>
+                    <div class="film-actions">
+                        <button class="btn btn-primary">Изменить</button>
+                        <button class="btn btn-danger">Удалить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
