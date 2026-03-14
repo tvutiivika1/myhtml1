@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинотеатр - Залы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <div class="header">
+        <div class="logo">КиноПлюс</div>
+        <div class="menu">
+            <a href="index.html">Главная</a>
+            <a href="film.html">Фильмы</a>
+            <a href="new.html">Сеансы</a>
+            <a href="zal.html">Залы</a>
+            <a href="#">Отчёты</a>
+        </div>
+        <!-- Кнопки входа и регистрации -->
+        <div class="auth-buttons">
+            <a href="entrance.html">Вход</a>
+            <a href="registration.html">Регистрация</a>
+        </div>
+    </div>
+
+    <!-- Контент -->
+    <div class="container">
+        <h1>Управление залами</h1>
+
+        <!-- Карточки залов -->
+        <div class="stats">
+            <div class="card">
+                <h2>Зал 1</h2>
+                <p>Вместимость: 85 мест</p>
+            </div>
+            <div class="card">
+                <h2>Зал 2</h2>
+                <p>Вместимость: 100 мест</p>
+            </div>
+            <div class="card">
+                <h2>Зал 3</h2>
+                <p>Вместимость: 150 мест</p>
+            </div>
+        </div>
+
+        <!-- Таблица залов -->
+        <h1 style="margin-top: 40px;">Список залов</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Номер зала</th>
+                    <th>Вместимость</th>
+                    <th>Тип экрана</th>
+                    <th>3D-поддержка</th>
+                    <th>Статус</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>85</td>
+                    <td>Стандартный</td>
+                    <td>Да</td>
+                    <td><span class="status green">Активен</span></td>
+                    <td>
+                        <button class="btn btn-primary">Изм.</button>
+                        <button class="btn btn-danger">Отключить</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>100</td>
+                    <td>IMAX</td>
+                    <td>Да</td>
+                    <td><span class="status green">Активен</span></td>
+                    <td>
+                        <button class="btn btn-primary">Изм.</button>
+                        <button class="btn btn-danger">Отключить</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>150</td>
+                    <td>Стандартный</td>
+                    <td>Нет</td>
+                    <td><span class="status red">На ремонте</span></td>
+                    <td>
+                        <button class="btn btn-primary">Изм.</button>
+                        <button class="btn btn-success">Активировать</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Карточки подробного описания залов -->
+        <h1 style="margin-top: 40px;">Детали залов</h1>
+        <div class="movies">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://placehold.co/150x200" alt="Зал 1">
+                </div>
+                <div class="movie-info">
+                    <h3>Зал 1</h3>
+                    <p>Вместимость: 85 мест</p>
+                    <p>Экран: Стандартный (12 × 7 м)</p>
+                    <p>3D: Поддерживается</p>
+                    <p>Звук: Dolby Atmos</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://placehold.co/150x200" alt="Зал 2">
+                </div>
+                <div class="movie-info">
+                    <h3>Зал 2</h3>
+                    <p>Вместимость: 100 мест</p>
+                    <p>Экран: IMAX (18 × 10 м)</p>
+                    <p>3D: Поддерживается</p>
+                    <p>Звук: IMAX 12-канальный</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://placehold.co/150x200" alt="Зал 3">
+                </div>
+                <div class="movie-info">
+                    <h3>Зал 3</h3>
+                    <p>Вместимость: 150 мест</p>
+                    <p>Экран: Стандартный (14 × 8 м)</p>
+                    <p>3D: Не поддерживается</p>
+                    <p>Звук: 7.1 Surround</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопки управления -->
+        <div style="margin-top: 40px; text-align: center;">
+            <button class="btn btn-primary">
+                + Добавить зал
+            </button>
+            <button class="btn btn-danger">
+                Удалить зал
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="js/contacts.js"></script>
+</body>
+</html>
