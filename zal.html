@@ -99,7 +99,7 @@
         <div class="movies">
             <div class="movie-card">
                 <div class="movie-poster">
-                    <img src="https://placehold.co/150x200" alt="Зал 1">
+                    <img src="https://avatars.mds.yandex.net/get-altay/933207/2a00000161d77258647dc27bf3fbb9e9f77a/XXXL" alt="Зал 1">
                 </div>
                 <div class="movie-info">
                     <h3>Зал 1</h3>
@@ -112,12 +112,12 @@
 
             <div class="movie-card">
                 <div class="movie-poster">
-                    <img src="https://placehold.co/150x200" alt="Зал 2">
+                    <img src="https://fercoseating.ru/images/com_droppics/152/5cc82c508c3ca.jpg" alt="Зал 2">
                 </div>
                 <div class="movie-info">
                     <h3>Зал 2</h3>
                     <p>Вместимость: 100 мест</p>
-                    <p>Экран: IMAX (18 × 10 м)</p>
+                    <p>Экран: IMAX (18 × 10 м)</p>
                     <p>3D: Поддерживается</p>
                     <p>Звук: IMAX 12-канальный</p>
                 </div>
@@ -125,12 +125,12 @@
 
             <div class="movie-card">
                 <div class="movie-poster">
-                    <img src="https://placehold.co/150x200" alt="Зал 3">
+                    <img src="https://cdn.culture.ru/images/90d03787-5962-5229-beb9-ec323933cb32" alt="Зал 3">
                 </div>
                 <div class="movie-info">
                     <h3>Зал 3</h3>
                     <p>Вместимость: 150 мест</p>
-                    <p>Экран: Стандартный (14 × 8 м)</p>
+                    <p>Экран: Стандартный (14 × 8 м)</p>
                     <p>3D: Не поддерживается</p>
                     <p>Звук: 7.1 Surround</p>
                 </div>
@@ -138,14 +138,49 @@
         </div>
 
         <!-- Кнопки управления -->
-        <div style="margin-top: 40px; text-align: center;">
-            <button class="btn btn-primary">
-                + Добавить зал
-            </button>
-            <button class="btn btn-danger">
-                Удалить зал
-            </button>
+       <h1 style="margin-top: 40px;">Добавить зал</h1>
+       <form id="addHallForm" style="max-width: 500px;">
+        <div class="form-group">
+            <label for="hallNumber">Номер зала</label>
+            <input type="number" name="hallNumber" id="hallNumber">
         </div>
+        <div class="form-group">
+            <label for="capacity">Вместимость</label>
+            <input type="number" id="capacity" name="capacity">
+        </div>
+        <div class="form-group">
+            <label for="screenType">Тип экрана</label>
+            <select name="screenType" id="screenType">
+                <option value="Стандартный"></option>
+                <option value="IMAX">IMAX</option>
+                <option value="Dolbly Cinema">Dolbly Cinema</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="has3D">3D‑поддержка:</label>
+                <select id="has3D" name="has3D" required>
+                    <option value="Да">Да</option>
+                    <option value="Нет">Нет</option>
+                </select>
+        </div>
+            <div class="form-group">
+                <label for="status">Статус:</label>
+                <select name="status" id="status">
+                    <option value="Активен">Активен</option>
+                    <option value="На ремонте">На ремонте</option>
+                    <option value="Резервный">Резервный</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-save">Добавить зал</button>
+            <div class="knop">
+                <button class="btn btn-primary">
+                    + Добавить зал
+                </button>
+                <button class="btn btn-danger">
+                    Удалить зал
+                </button>
+            </div>
+       </form>
     </div>
 
     <script type="module" src="js/contacts.js"></script>
